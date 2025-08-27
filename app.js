@@ -61,3 +61,8 @@ document.getElementById("cards-container").addEventListener("click", (e) => {
     }
   }
 });
+
+document.getElementById("clear").addEventListener("click", () => {
+  const historyContainer = document.getElementById("history-container");
+  historyContainer.innerText = "";
+});

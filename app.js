@@ -22,8 +22,9 @@ document.getElementById("cards-container").addEventListener("click", (e) => {
   const copyCounterText = document.getElementById("copy-counter").innerText;
   let copyCounter = parseInt(copyCounterText);
   if (e.target.closest(".btn-copy")) {
+    alert(`Number Copy Completed: ${number}`);
     document.getElementById("copy-counter").innerText = copyCounter + 1;
-    navigator.clipboard.writeText(title);
+    navigator.clipboard.writeText(number);
   }
 
   //   Call Number
@@ -31,7 +32,7 @@ document.getElementById("cards-container").addEventListener("click", (e) => {
   let currentBalance = parseInt(coinText);
   if (e.target.closest(".phone-call")) {
     if (currentBalance < 20) {
-      alert("You do not have sufficient balance to call. Make Recharge");
+      alert("❌ You do not have sufficient balance to call. Make Recharge");
       return;
     }
     alert(`📞 calling ${para} ${number}...`);

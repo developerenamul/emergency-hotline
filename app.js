@@ -52,7 +52,7 @@ document.getElementById("cards-container").addEventListener("click", (e) => {
       div.className =
         "history p-1 bg-slate-300 flex justify-between items-center rounded my-2";
       div.innerHTML = `
-              <div class="text">
+              <div class="text w-1/2">
                 <h2 class="text-sm font-bold">${title}</h2>
                 <h3>${number}</h3>
               </div>
